@@ -1,0 +1,15 @@
+.timeList{margin-top: .84rem; height: .98rem; background: #fff; border-top: .01rem solid #f3f3f3; border-bottom: .01rem solid #f3f3f3;}
+.timeList li{float: left; width: 20%; text-align: center;}
+.timeList li p.title{font-size: .36rem; color: #5C5C5C;}
+.timeList li p.text{font-size: .24rem; color: #999999;}
+.timeList li.current p{color: #F83244 !important;}
+.countDown{height: .92rem; line-height: .92rem; text-align: center; color: #2A2A2A; font-weight: bold; background: #fff;}
+.countDown span{display: inline-block; vertical-align: top;}
+.countDown .text{font-size: .3rem;}
+.countDown .time{font-size: .34rem;}
+.list progress{display: inline-block; box-sizing: border-box; width: 2.22rem; height: .36rem; background: #fff; color: #F83244; border: .01rem solid #f83244; border-radius: .1rem; }
+progress::-moz-progress-bar { background: #0064B4; }
+progress::-webkit-progress-bar { background: #fff; }
+progress::-webkit-progress-value  { background: #fee0e3; }
+.list dl dd p.price{bottom: .8rem;}
+.list span.remain{position: absolute; bottom: .2rem; display: block; width: 2.02rem; height: .36rem; line-height: .36rem; text-align: center; font-size: .22rem; color: #F83244;}

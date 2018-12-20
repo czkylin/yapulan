@@ -1,0 +1,6 @@
+body{background: #f7f4f4;}
+.list li{box-sizing: border-box; padding: .24rem .31rem 0;}
+.list li .time{margin: 0 auto; width: 1.7rem; height: .38rem; line-height: .38rem; text-align: center; font-size: .22rem; color: #fff; border-radius: .04rem; background: #d2d2d2;}
+.list li .content{box-sizing: border-box; padding: .08rem .24rem 0; margin: .24rem auto 0; background: #fff; width: 6.88rem; height: 1.76rem; border-radius: .04rem;}
+.list li .content p.title{font-size: .28rem; line-height: .66rem;}
+.list li .content p.text{font-size: .26rem; line-height: .38rem; color: #5c5c5c;}

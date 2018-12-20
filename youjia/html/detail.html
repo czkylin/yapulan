@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>详情页</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <link rel="stylesheet" href="../css/detail.css">
+  <script>
+    document.getElementsByTagName('html')[0].style.fontSize = document.documentElement.clientWidth/750*100 + 'px';
+  </script>
+</head>
+<body>
+  <div class="header w688"><i class="back"><a href="#"></a></i><i class="backIndex"></i><i class="share"></i></div>
+  <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../img/detail/1.png" alt=""></div>
+          <div class="swiper-slide"><img src="../img/detail/1.png" alt=""></div>
+          <div class="swiper-slide"><img src="../img/detail/1.png" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+  </div>
+  <p class="title w688">【新农哥】 坚果零食大礼包560g伴手礼节日送礼8种干果共三十袋</p>
+  <p class="price w688"><span>￥</span>62.9</p>
+  <ul class="list w688">
+    <li><span class="left">商品编号:</span><span class="right">SD14244786594</span></li>
+    <li><span class="left">运费:</span><span class="right">免运费</span></li>
+    <li><span class="left">商品重量:</span><span class="right">256kg</span></li>
+    <li><span class="left">购买数量:</span><span class="right count"><i class="minus">-</i><input class="num" type="text" name="" value="8"><i class="plus">+</i></span></li>
+  </ul>
+  <div class="details">
+    <div class="title">商品详情</div>
+    <img src="../img/detail/1.png" alt="">
+  </div>
+  <div class="footer">
+    <dl><a href="#">
+      <dt><img src="../img/detail/service.png" alt=""></dt>
+      <dd>客服</dd>
+    </a></dl>
+    <dl class="heart">
+      <dt><i></i></dt>
+      <dd>收藏</dd>
+    </dl>
+    <dl><a href="#">
+      <dt><img src="../img/detail/cart.png" alt=""><b class="active">9+</b></dt>
+      <dd>购物车</dd>
+    </a></dl>
+    <div class="addCart">加入购物车</div>
+    <div class="buy">立即购买</div>
+  </div>
+
+  <div class="cover">
+    <div class="content">
+      <ul>
+        <li><a href="#">
+          <img src="../img/list/wx.png" alt="">
+          <p class="text">微信</p>
+        </a></li>
+        <li><a href="#">
+          <img src="../img/list/friends.png" alt="">
+          <p class="text">朋友圈</p>
+        </a></li>
+        <li><a href="#">
+          <img src="../img/list/qq.png" alt="">
+          <p class="text">QQ</p>
+        </a></li>
+      </ul>
+      <p class="cancel">取消</p>
+    </div>
+  </div>
+<script src="../js/jquery-3.3.1.min.js" charset="utf-8"></script>
+<script src="../js/swiper.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+  var mySwiper = new Swiper ('.swiper-container', {
+    // direction: 'vertical', // 垂直切换选项
+    loop: true, // 循环模式选项
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
+  var share = document.getElementsByClassName('share')[0];
+  var cover = document.getElementsByClassName('cover')[0];
+  var cancel = document.getElementsByClassName('cancel')[0];
+  var minus = document.getElementsByClassName('minus')[0];
+  var plus = document.getElementsByClassName('plus')[0];
+  var num = document.getElementsByClassName('num')[0];
+  var heart = document.getElementsByClassName('heart')[0];
+  var count = 0;
+  share.addEventListener('touchstart', function() {
+    var top = document.documentElement.scrollTop || document.body.scrollTop;
+    cover.style.top = top/100+'rem';
+    document.body.style.overflow = 'hidden';
+    cover.classList.add('show');
+  })
+  cancel.addEventListener('touchstart', function() {
+    cover.classList.remove('show');
+    document.body.style.overflow = '';
+  })
+  cover.addEventListener('touchstart', function(e) {
+    if(e.target && e.target.classList.contains('cover')) {
+      cover.classList.remove('show');
+      document.body.style.overflow = '';
+    }
+  })
+  minus.addEventListener('touchstart', function() {
+    num.value -= 1;
+  })
+  plus.addEventListener('touchstart', function() {
+    count = parseInt(num.value);
+    num.value = count + 1;
+  })
+  heart.addEventListener('touchstart', function() {
+    this.classList.toggle('active');
+  })
+
+
+</script>
+</body>
+</html>

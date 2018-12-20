@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>购物车</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/list.css">
+  <link rel="stylesheet" href="../css/cart.css">
+  <script>
+    document.getElementsByTagName('html')[0].style.fontSize = document.documentElement.clientWidth/750*100 + 'px';
+  </script>
+</head>
+<body>
+  <div class="header"><a class="back" href="javascript:;"><i></i></a><span>购物车</span></div>
+  <div class="list w688">
+    <div class="content">
+      <b class="checked"></b>
+      <dl>
+        <dt><img src="../img/list/goods.png" alt=""></dt>
+        <dd>
+          <p class="title">男款秋季优质棉原宿风韩版男袜子男款秋季优质棉袜</p>
+          <p class="price"><span>￥</span><strong>32</strong></p>
+          <span class="right count"><i class="minus">-</i><input class="num" type="text" name="" value="8"><i class="plus">+</i></span>
+        </dd>
+      </dl>
+      <p class="after"><i class="heart">收藏</i><i class="delete">删除</i></p>
+    </div>
+    <div class="content">
+      <b></b>
+      <dl>
+        <dt><img src="../img/list/goods.png" alt=""></dt>
+        <dd>
+          <p class="title">男款秋季优质棉原宿风韩版男袜子男款秋季优质棉袜</p>
+          <p class="price"><span>￥</span><strong>32</strong></p>
+          <span class="right count"><i class="minus">-</i><input class="num" type="text" name="" value="8"><i class="plus">+</i></span>
+        </dd>
+      </dl>
+      <p class="after"><i class="heart">收藏</i><i class="delete">删除</i></p>
+    </div>
+    <div class="content">
+      <b></b>
+      <dl>
+        <dt><img src="../img/list/goods.png" alt=""></dt>
+        <dd>
+          <p class="title">男款秋季优质棉原宿风韩版男袜子男款秋季优质棉袜</p>
+          <p class="price"><span>￥</span><strong>32</strong></p>
+          <span class="right count"><i class="minus">-</i><input class="num" type="text" name="" value="8"><i class="plus">+</i></span>
+        </dd>
+      </dl>
+      <p class="after"><i class="heart">收藏</i><i class="delete">删除</i></p>
+    </div>
+    <div class="footer">
+      <div class="left">
+        <b></b><span>全选</span>
+      </div>
+      <div class="total">
+        <p class="top">合计：<span>¥689.00</span></p>
+        <p class="bottom">不含运费</p>
+      </div>
+      <div class="buy">去结算</div>
+    </div>
+    <!-- <div class="after"><i class="heart">收藏</i><i class="delete">删除</i></div> -->
+  </div>
+  <footer>
+    <dl>
+      <dt><img src="../img/home.png" alt=""></dt>
+      <dd>首页</dd>
+    </dl>
+    <dl>
+      <dt><img src="../img/list.png" alt=""></dt>
+      <dd>分类</dd>
+    </dl>
+    <dl>
+      <dt><img src="../img/cart0.png" alt=""></dt>
+      <dd>购物车</dd>
+    </dl>
+    <dl>
+      <dt><img src="../img/my.png" alt=""></dt>
+      <dd>我的</dd>
+    </dl>
+  </footer>
+
+<script type="text/javascript">
+//侧滑显示删除按钮
+var expansion = null; //是否存在展开的list
+var container = document.querySelectorAll('.list .content');
+var content = document.getElementsByClassName('content');
+var minus = document.getElementsByClassName('minus');
+var plus = document.getElementsByClassName('plus');
+var num = document.getElementsByClassName('num');
+var oB = document.getElementsByTagName('b');
+var price = document.getElementsByTagName('strong');
+var tottal = document.getElementsByClassName('top')[0].getElementsByTagName('span')[0];
+var bLength = 0;
+var length = content.length;
+var count = 0;
+//计算总价
+function tottalprice() {
+  count = 0;
+  for(var i=0; i<content.length; i++) {
+    if(content[i].classList.contains('checked')) {
+      count += num[i].value * price[i].innerHTML;
+    }
+  }
+  tottal.innerHTML = '￥' + count;
+}
+tottalprice();
+
+//加减
+for(var i=0; i<content.length; i++) {
+  minus[i].index = i;
+  plus[i].index = i;
+  minus[i].addEventListener('touchstart', function() {
+    num[this.index].value -= 1;
+    if(num[this.index].value < 0) {
+      num[this.index].value = 0;
+    }
+    tottalprice();
+  })
+  plus[i].addEventListener('touchstart', function() {
+    num[this.index].value = parseInt(num[this.index].value) + 1;
+    tottalprice();
+  })
+
+}
+
+//单选
+for(var i=0; i<length; i++) {
+  oB[i].index = i;
+  oB[i].addEventListener('touchstart', function() {
+    this.classList.toggle('checked');
+    this.parentNode.classList.toggle('checked');
+    tottalprice();
+  })
+}
+
+//全选
+oB[length].addEventListener('touchstart', function() {
+  this.classList.toggle('checked');
+  if(!this.classList.contains('checked')){
+    for(var i=0; i<length; i++) {
+      oB[i].classList.remove('checked');
+      oB[i].parentNode.classList.remove('checked');
+    }
+    tottalprice();
+  } else {
+    for(var i=0; i<length; i++) {
+      oB[i].classList.add('checked');
+      oB[i].parentNode.classList.add('checked');
+    }
+    tottalprice();
+  }
+})
+
+//全选关联
+
+//左滑效果
+for(var i = 0; i < container.length; i++){
+    var x, y, X, Y, swipeX, swipeY;
+    container[i].addEventListener('touchstart', function(event) {
+        x = event.changedTouches[0].pageX;
+        y = event.changedTouches[0].pageY;
+        swipeX = true;
+        swipeY = true ;
+        // if(expansion){   //判断是否展开，如果展开则收起
+        //     expansion.className = "content";
+        // }
+    });
+    container[i].addEventListener('touchmove', function(event){
+
+        X = event.changedTouches[0].pageX;
+        Y = event.changedTouches[0].pageY;
+        // 左右滑动
+        if(swipeX && Math.abs(X - x) - Math.abs(Y - y) > 0){
+            // 阻止事件冒泡
+            event.stopPropagation();
+            if(X - x > 10){   //右滑
+                event.preventDefault();
+                this.className = "content";    //右滑收起
+            }
+            if(x - X > 10){   //左滑
+                event.preventDefault();
+                this.classList.add("swipeleft");   //左滑展开
+                expansion = this;
+            }
+            swipeY = false;
+        }
+        // 上下滑动
+        if(swipeY && Math.abs(X - x) - Math.abs(Y - y) < 0) {
+            swipeX = false;
+        }
+    });
+}
+
+
+</script>
+</body>
+</html>

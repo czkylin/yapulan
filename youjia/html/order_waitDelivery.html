@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>我的订单</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/orderAll.css">
+  <script>
+    document.getElementsByTagName('html')[0].style.fontSize = document.documentElement.clientWidth/750*100 + 'px';
+  </script>
+</head>
+<body>
+  <div class="header"><a class="back" href="javascript:;"><i></i></a><span>我的订单</span></div>
+  <ul class="nav">
+    <li><a href="">全部订单</a></li>
+    <li><a href="">待付款</a></li>
+    <li class="active"><a href="">待发货</a></li>
+    <li><a href="">已收货</a></li>
+    <li><a href="">退款订单</a></li>
+  </ul>
+  <ul class="order">
+    <li class="waitDelivery">
+      <p class="title">2018-19-18 11:26 <span class="status">已发货</span></p>
+      <dl>
+        <dt><img src="../img/list/goods.png" alt=""></dt>
+        <dd>
+          <p class="text">男款秋季优质棉原宿风韩版男袜子男款秋季优质棉袜</p>
+          <span class="price">¥124</span><span class="num">x1</span>
+        </dd>
+      </dl>
+      <p class="count">共一件商品，合计<strong>¥124</strong></p>
+      <div class="bottom"><span>查看物流</span><span>确认收货</span></div>
+    </li>
+    <li class="waitDelivery">
+      <p class="title">2018-19-18 11:26 <span class="status">已发货</span></p>
+      <dl>
+        <dt><img src="../img/list/goods.png" alt=""></dt>
+        <dd>
+          <p class="text">男款秋季优质棉原宿风韩版男袜子男款秋季优质棉袜</p>
+          <span class="price">¥124</span><span class="num">x1</span>
+        </dd>
+      </dl>
+      <dl>
+        <dt><img src="../img/list/goods.png" alt=""></dt>
+        <dd>
+          <p class="text">男款秋季优质棉原宿风韩版男袜子男款秋季优质棉袜</p>
+          <span class="price">¥124</span><span class="num">x1</span>
+        </dd>
+      </dl>
+      <p class="count freight">共一件商品，合计<strong>¥124</strong><span>（含运费¥10）</span></p>
+      <div class="bottom freight"><span>取消</span><span>去支付</span></div>
+    </li>
+  </ul>
+</body>
+</html>

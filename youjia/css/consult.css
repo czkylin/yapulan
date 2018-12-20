@@ -1,0 +1,18 @@
+body{background: #f7f4f4;}
+.toggle{overflow: hidden; background: #fff; border-top: .01rem solid #f3f3f3;}
+.toggle li{float: left; width: 50%; height: .78rem; line-height: .78rem; text-align: center; border-bottom: .01rem solid #f3f3f3;}
+.toggle li a{position: relative; display: block; height: 100%;}
+.toggle li a span{position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;display: inline-block; width: 1.26rem; height: 100%; font-size: .3rem; color: #9c9c9c;}
+.toggle li.active a span{ color: #2a2a2a; border-bottom: .03rem solid #f53549;}
+ul.list{background: #fff;}
+ul.list li{overflow: hidden; border-bottom: .01rem solid #f3f3f3;}
+ul.list li:nth-last-child(1){border: 0;}
+ul.list li p.title{box-sizing: border-box; padding-left: .31rem; height: .78rem; line-height: .78rem; font-size: .28rem; color: #999; border-bottom: .01rem solid #f3f3f3;}
+ul.list li p.title span{color: #2a2a2a;}
+ul.list li .content{margin: 0 auto; width: 6.88rem; border-bottom: .01rem solid #f3f3f3;}
+ul.list li .content p.text{margin-top: .34rem; font-size: .28rem; line-height: .36rem;}
+ul.list li .content p.status{height: .74rem; line-height: .74rem; font-size: .24rem; color: #5c5c5c;}
+ul.list li .content p.status span{margin-left: 4.64rem; color: #999;}
+form{text-align: center;}
+form input{box-sizing: border-box; padding-left: .26rem; width: 6.88rem; height: .88rem; line-height: .88rem; background: #fafbfb; border-radius: .04rem;}
+form textarea{box-sizing: border-box; padding: .2rem .26rem; margin-top: .26rem; width: 6.88rem; height: 2.06rem; line-height: .32rem; background: #fafbfb; border: 0; border-radius: .04rem;}

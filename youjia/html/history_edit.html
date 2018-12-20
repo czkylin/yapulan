@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>浏览记录</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/list.css">
+  <link rel="stylesheet" href="../css/cart.css">
+  <style media="screen">
+    .footer{bottom: 0;}
+    .footer .left{margin-left: .31rem;}
+    .price{width: 100%; text-align: right; }
+    .buy{position: absolute; right: 0;}
+    .header span.center{display: inline-block; width: 100%; text-align: center;}
+    .header a.save{position: absolute; left: 6.3rem;}
+  </style>
+  <script>
+    document.getElementsByTagName('html')[0].style.fontSize = document.documentElement.clientWidth/750*100 + 'px';
+  </script>
+</head>
+<body>
+  <div class="header"><a class="back" href="javascript:;"><i></i></a><span class="center">浏览记录</span><a class="save">完成</a></div>
+  <div class="list w688">
+    <p class="time">11月30号</p>
+    <div class="content">
+      <b class="checked"></b>
+      <dl>
+        <dt><img src="../img/list/goods.png" alt=""></dt>
+        <dd>
+          <p class="title">男款秋季优质棉原宿风韩版男袜子男款秋季优质棉袜</p>
+          <p class="price"><span>￥</span>32</p>
+        </dd>
+      </dl>
+      <p class="after"><i class="heart">收藏</i><i class="delete">删除</i></p>
+    </div>
+    <div class="content checked">
+      <b></b>
+      <dl>
+        <dt><img src="../img/list/goods.png" alt=""></dt>
+        <dd>
+          <p class="title">男款秋季优质棉原宿风韩版男袜子男款秋季优质棉袜</p>
+          <p class="price"><span>￥</span>32</p>
+        </dd>
+      </dl>
+      <p class="after"><i class="heart">收藏</i><i class="delete">删除</i></p>
+    </div>
+    <p class="time">11月29号</p>
+    <div class="content">
+      <b class="checked"></b>
+      <dl>
+        <dt><img src="../img/list/goods.png" alt=""></dt>
+        <dd>
+          <p class="title">男款秋季优质棉原宿风韩版男袜子男款秋季优质棉袜</p>
+          <p class="price"><span>￥</span>32</p>
+        </dd>
+      </dl>
+      <p class="after"><i class="heart">收藏</i><i class="delete">删除</i></p>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="left">
+      <b></b><span>全选</span>
+    </div>
+    <div class="buy">删除</div>
+  </div>
+<script type="text/javascript">
+  var oB = document.getElementsByTagName('b');
+  var length = oB.length;
+  for(var i=0; i<length; i++) {
+    oB[i].index = i;
+    oB[i].addEventListener('touchstart', function() {
+      this.classList.toggle('checked');
+      this.parentNode.classList.toggle('checked');
+    })
+  }
+  oB[length-1].addEventListener('touchstart', function() {
+    if(!this.classList.contains('checked')){
+      for(var i=0; i<length; i++) {
+        oB[i].classList.remove('checked');
+        oB[i].parentNode.classList.remove('checked');
+      }
+    } else {
+      for(var i=0; i<length; i++) {
+        oB[i].classList.add('checked');
+        oB[i].parentNode.classList.add('checked');
+      }
+    }
+  })
+</script>
+
+</body>
+</html>

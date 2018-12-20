@@ -1,0 +1,10 @@
+body{background: #f7f4f4;}
+.container{overflow: hidden; box-sizing: border-box; padding: .48rem 0 0 .33rem; margin-bottom: .18rem; height: 1.78rem; border-top: .01rem solid #f3f3f3; background: #fff;}
+.container p.title{font-size: .24rem; color: #999;}
+.container p.num{margin-top: .04rem; font-size: .52rem; color: #f53549;}
+.list{background: #fff;}
+.list li{position: relative; box-sizing: border-box; padding: 0 .34rem; height: 1.2rem; border-bottom: .01rem solid #f3f3f3;}
+.list li .content{overflow: hidden; width: 1.5rem;}
+.list li .content p.text{margin-top: .2rem; height: .44rem; line-height: .44rem; font-size: .28rem;}
+.list li .content p.time{font-size: .24rem; height: .38rem; line-height: .38rem; color: #999;}
+.list li span.num{position: absolute; top: 0; bottom: 0; right: .34rem; margin: auto; line-height: 1.2rem; font-size: .34rem; color: #f53549;}

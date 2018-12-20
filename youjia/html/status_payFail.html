@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>请选择支付方式</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/status.css">
+  <style media="screen">
+    body{background: #f7f4f4;}
+    .content{height: 3.58rem; background: #fff;}
+    .content p.text{color: #f53549;}
+  </style>
+  <script>
+    document.getElementsByTagName('html')[0].style.fontSize = document.documentElement.clientWidth/750*100 + 'px';
+  </script>
+</head>
+<body>
+  <div class="header"><a class="back" href="javascript:;"><i></i></a><span>请选择支付方式</span></div>
+  <div class="content">
+    <img src="../img/list/fail.png" alt="">
+    <p class="text">支付失败</p>
+  </div>
+  <ul class="con1">
+    <li><span class="left">订单金额</span><span class="right">689.00元</span></li>
+    <li><span class="left">订单编号</span><span class="right">4400733462</span></li>
+    <li><span class="left">收货地址</span><span class="right">北京 北京市 海淀区 中关村互联网文化创意产业园2号楼 王旭升157****7487</span></li>
+  </ul>
+  <ul class="pay w688">
+    <li class="checked"><img src="../img/detail/balance.png" alt=""><span>账户余额</span><i></i></li>
+    <li><img src="../img/detail/zhifubao.png" alt=""><span>支付宝</span><i></i></li>
+    <li><img src="../img/detail/wxPay.png" alt=""><span>微信</span><i></i></li>
+  </ul>
+  <div class="bottom">
+    <span>¥689.00</span><a href="">支付</a>
+  </div>
+<script type="text/javascript">
+  var list = document.getElementsByClassName('pay')[0];
+  var oLi = list.getElementsByTagName('li');
+  for(var i=0; i<oLi.length; i++) {
+    oLi[i].index = i;
+    oLi[i].addEventListener('touchstart', function() {
+      for(var j=0; j<oLi.length; j++) {
+        oLi[j].classList.remove('checked');
+      }
+      this.classList.add('checked');
+    })
+  }
+</script>
+</body>
+</html>

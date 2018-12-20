@@ -1,0 +1,35 @@
+.con1{height: 2.9rem; width: 100%; color: #fff; background: #f4b563;}
+.con1 .header{background: #f4b563; color: #fff;}
+.con1 .header i{background-image: url('../img/list/back1.png');}
+.con1 p{color: #fff; text-align: center;}
+.con1 p.points{margin-top: .4rem; font-size: .72rem;}
+.con1 p.text{font-size: .26rem;}
+.toggle{overflow: hidden;}
+.toggle li{float: left; width: 50%; height: .78rem; line-height: .78rem; text-align: center; border-bottom: .01rem solid #f3f3f3;}
+.toggle li a{position: relative; display: block; height: 100%;}
+.toggle li a span{position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;display: inline-block; width: 1.2rem; height: 100%; font-size: .3rem; color: #9c9c9c;}
+.toggle li.active a span{ color: #2a2a2a; border-bottom: .03rem solid #f53549;}
+p.range{position: relative; box-sizing: border-box; padding-left: .31rem; height: .78rem; line-height: .78rem; font-size: .32rem; border-bottom: .01rem solid #f3f3f3;}
+p.range i{display: block; position: absolute; top: 0; bottom: 0; left: 0; margin: auto; width: .08rem; height: .36rem; background: #f53549;}
+ul.points li{position: relative; box-sizing: border-box; padding: 0 .32rem 0 .38rem; height: 1.18rem; overflow: hidden; border-bottom: .01rem solid #f3f3f3;}
+ul.points li p{width: 50%;}
+ul.points li p.text{margin-top: .26rem; font-size: .28rem;}
+ul.points li p.time{font-size: .24rem; color: #999;}
+ul.points li span{position: absolute; top: 0; bottom: 0; right: .31rem; margin: auto; height: 100%; line-height: 1.18rem; font-size: .3rem; color: #f53549;}
+
+
+dl{box-sizing: border-box; padding: .2rem 0 .08rem 0; height: 2.5rem; width: 100%;}
+dl dt,.list dl dd{float: left;}
+dl dt{width: 2.19rem; height: 2.19rem; background: #e7e7e8;}
+dl dt img{display: block; width: 100%; height: auto; }
+dl dd{position: relative; box-sizing: border-box; padding-top: .1rem; margin-left: .24rem; width: 4.42rem; height: 100%;}
+dl dd p.title{font-size: .26rem; color: #2A2A2A; line-height: .34rem; text-align: left;}
+dl dd p.price{position: absolute; bottom: .1rem; font-size: .36rem; color: #F83244;}
+dl dd p.price span{font-size: .28rem;}
+dl dd .exchange{position: absolute; right: 0; bottom: .1rem; width: 1.34rem; height: .56rem; line-height: .56rem; text-align: center; background: #F83244; color: #fff; font-size: .26rem; border-radius: .1rem;}
+
+
+dl{box-sizing: border-box; padding-left: .31rem; padding-bottom: 0; height: 2.04rem;}
+dl dt{width: 1.69rem; height: 1.69rem;}
+dl dd{float: left; width: 4.92rem; border-bottom: .04rem solid #F3F3F3;}
+dl dd .exchange{width: 1.4rem; height: .5rem; line-height: .5rem; font-size: .24rem; background: #f83244; border-radius: .04rem; color: #fff;}

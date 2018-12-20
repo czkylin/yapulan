@@ -1,0 +1,33 @@
+.list{background: #fff;}
+.list li{position: relative; height: 2.1rem;  border-bottom: .01rem solid #F3F3F3;}
+.list li.sn{height: .78rem; line-height: .78rem; font-size: .24rem; border-top: .01rem solid #f3f3f3; border-bottom: .01rem solid #f3f3f3;}
+/* .content{overflow: hidden; position: relative;} */
+
+.list b{position: absolute; top: 0; bottom: 0; margin: auto; display: inline-block; width: .34rem; height: .34rem; border: .01rem solid #686868; border-radius: 50%;}
+.list b.checked{border: 0; background: url('../img/detail/checked.png') no-repeat center; background-size: 100%;}
+
+.list dl{box-sizing: border-box; padding: .2rem 0 .08rem 0; height: 2.5rem; width: 100%;}
+.list dl dt,.list dl dd{float: left;}
+.list dl dt{width: 2.19rem; height: 2.19rem; background: #e7e7e8;}
+.list dl dt img{display: block; width: 100%; height: auto; }
+.list dl dd{position: relative; box-sizing: border-box; padding-top: .1rem; margin-left: .24rem; width: 4.42rem; height: 100%;}
+.list dl dd p.title{font-size: .26rem; color: #2A2A2A; line-height: .34rem;}
+.list dl dd p.price{position: absolute; bottom: .2rem; font-size: .36rem; color: #F83244;}
+.list dl dd p.price span{font-size: .28rem;}
+.list dl dd i{display: inline-block; width: 1.04rem; height: 2.1rem; line-height: 2.1rem; text-align: center; font-size: .28rem; color: #fff;}
+.list dl dd .buy{position: absolute; right: 0; bottom: .1rem; width: 1.34rem; height: .56rem; line-height: .56rem; text-align: center; background: #F83244; color: #fff; font-size: .26rem; border-radius: .1rem;}
+
+.list dl{overflow: hidden; float: left; margin-left: .6rem; padding-bottom: 0; height: 2.1rem; width: 6.28rem;}
+.list dl dt{width: 1.69rem; height: 1.69rem;}
+.list dl dd{width: 4.32rem;}
+.list dl dd .buy{width: 1.42rem; height: .54rem; background: #fff; border: .01rem solid #5C5C5C; border-radius: .04rem; color: #5C5C5C;}
+.list dl dd i{display: inline-block; width: 1.04rem; height: 2.1rem; line-height: 2.1rem; text-align: center; font-size: .28rem; color: #fff;}
+
+span.count{display: block; position: absolute; bottom: .2rem; right: 0; margin: auto; height: .5rem;}
+i.minus,i.plus{width: .6rem !important; background: #F7F4F4 !important;}
+.list dd span.right i{float: left; display: inline-block; width: .62rem; height: .5rem; line-height: .5rem; text-align: center; background: #fff; color: #2A2A2A;}
+
+.reason p.text,.upload p.text{height: .84rem; line-height: 1rem; font-size: .24rem;}
+.reason textarea{box-sizing: border-box; padding: .22rem; width: 6.86rem; height: 1.78rem; line-height: .36rem; font-size: .26rem; color: #999; background: #fafbfb; border: 0;}
+
+.submit{margin: 0 auto; width: 6.88rem; height: .88rem; line-height: .88rem; text-align: center; font-size: .3rem; color: #fff; background: #f6949e; border-radius: .44rem;}

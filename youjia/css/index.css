@@ -1,0 +1,69 @@
+body{background: #f7f4f4;}
+header{z-index: 2; position: fixed; top: 0; width: 100%; height: .92rem; background: #fff;}
+.w688{box-sizing: border-box; padding: 0 .31rem; margin: 0 auto;}
+header .logo{line-height: .92rem; font-size: .4rem; color: #f53549; font-weight: bolder;}
+header .search{position: absolute; top: 0; bottom: 0; left: 1.72rem; margin: auto; width: 4.7rem; height: .6rem; background: #f7f4f4; font-size: .26rem; font-weight: bold; color: #999999; border-radius: .6rem;}
+header .search img{position: absolute; top: 0; bottom: 0; left: .2rem; margin: auto; width: .28rem; height: .28rem;}
+header i{display: block; width: .28rem; height: .28rem; background: url('../img/search.png') no-repeat center; background-size: 100%;}
+header input{margin-left: .62rem; height: .6rem; }
+header img.message{position: absolute; top: 0; bottom: 0; right: .31rem; margin: auto; display: block; width: .4rem; height: .29rem;}
+header i{display: none; position: absolute; top: .24rem; right: .27rem; width: .16rem; height: .16rem; background: #f53549; border-radius: 50%;}
+header i.show{display: block;}
+.swiper-container{margin-top: .92rem; width: 100%; height: 3.68rem; overflow: hidden;}
+.swiper-container img{display: block; width: 100%; height: auto; overflow: hidden;}
+.swiper-pagination-bullet-active{background: #ff976a;}
+.swiper-pagination.swiper-pagination-bullets{bottom: 0;}
+.list{height: 2.02rem; background: #fff;}
+.list dl{box-sizing: border-box; padding-top: .26rem; float: left; width: 25%; text-align: center;}
+.list dl dt{position: relative; width: 100%;  height: 1.08rem; overflow: hidden;}
+.list dl dt img{position: absolute; left: 0; right: 0; margin: auto; display: block; width: 1.08rem; height: auto;}
+.list dl dd{font-size: .24rem;}
+.con1{margin-top: .12rem; height: 2.62rem;}
+.conleft{float: left; box-sizing: border-box; padding: 0 .16rem 0 .31rem; width: 3.7rem; height: 100%; background: #fff;}
+.conleft .title{height: .74rem; line-height: .74rem;}
+.conleft .title span{display: block;}
+.conleft .title .sTitle{float: left; font-size: .28rem; color: #2A2A2A;}
+.conleft .title .text{float: right; font-size: .22rem; color: #999;}
+.conleft .goodsBox{float: left;}
+/* .goodsBox{position: relative; margin-right: .09rem; width: 1.57rem; height: 1.57rem; background: #F7F4F4;}
+.goodsBox.space{margin-right: 0;}
+.goodsBox img{position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; width: auto; height: 80%;} */
+.goodsBox{margin-right: .09rem; width: 1.57rem; height: 1.57rem; background: #F7F4F4;}
+.goodsBox.space{margin-right: 0;}
+.goodsBox img{width: 100%; height: auto;}
+.conright{float: right; padding: 0 .31rem 0 .16rem; }
+.con{margin-top: .16rem;}
+.con2{height: 4.2rem;}
+.con.list .content{height: 100%; overflow: hidden;}
+.con.list .title{overflow: hidden; position: relative; height: .88rem; line-height: .88rem; font-size: .26rem; color: #5C5C5C;}
+.con.list .title .sTitle{font-size: .32rem; color: #2A2A2A;}
+.con.list .title .time{width: .3rem; height: .3rem; background: #5c5c5c; color: #fff;}
+.con.list .title .hour{margin-left: .2rem;}
+.con.list .title .more{float: right; margin-right: .26rem;}
+.con.list .title i{position: absolute; right: 0; top: 0; bottom: 0; margin: auto; display: block; float: right; width: .13rem; height: .23rem; background: url('../img/more.png') no-repeat center; background-size: 100%;}
+.con.list .listBox{overflow: hidden; margin-right: .12rem; width: 2.22rem; height: 2.22rem; background: #F7F4F4;}
+.con.list .listBox img{overflow: hidden; width: 100%; height: auto;}
+/* .con.list .listBox{position: relative; overflow: hidden; margin-right: .12rem; width: 2.22rem; height: 2.22rem; background: #F7F4F4;}
+.con.list .listBox img{position: absolute; top: 0; bottom: 0; top: 0; left: 0; right: 0; margin: auto; overflow: hidden; width: 80%; height: auto;} */
+.con.list dl{overflow: hidden; padding: 0; margin-right: .11rem; width: 2.22rem; height: 3.82rem; text-align: left;}
+.con.list dl:nth-of-type(3n+3){margin-right: 0;}
+.con.list .content dd p{height: auto; line-height: .42rem;}
+.con2 .content dd p.text{height: .56rem; line-height: .56rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.con.list .content dd p.price{font-size: .28rem; color: #F53549;}
+.con.list .content dd p.price span{font-size: .22rem;}
+/* .con3{height: 8.42rem;} */
+.con3,.con4{height: 100%;}
+.con3 .content dl dd{margin-top: .1rem;}
+.con3 .content dl dd p.text{height: .72rem; line-height: .36rem; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden;}
+/* .con3 .content dl dd p{height: .36rem; line-height: .36rem;} */
+.con4{margin-bottom: .9rem;}
+footer{position: fixed; bottom: 0; width: 100%; height: .9rem; background: #fafafa;}
+footer dl{float: left; width: 25%;}
+footer dl dt{position: relative; height: .52rem; overflow: hidden; text-align: center;}
+footer dl dt img{position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; display: block;}
+footer dl:nth-of-type(1) dt img{width: .38rem; height: .35rem;}
+footer dl:nth-of-type(1) dd{color: #F83244;}
+footer dl:nth-of-type(2) dt img{width: .28rem; height: .35rem;}
+footer dl:nth-of-type(3) dt img{width: .33rem; height: .35rem;}
+footer dl:nth-of-type(4) dt img{width: .3rem; height: .35rem;}
+footer dl dd{font-size: .22rem; text-align: center;}

@@ -1,0 +1,27 @@
+html,body{font-family: 'PingFangSC-Light',"微软雅黑";}
+html,body,h2,div,ul,li,dl,dt,dd,p{margin: 0; padding: 0;}
+body{color: #2a2a2a;}
+ul,li{list-style: none;}
+a{text-decoration: none; color: #333;}
+strong{font-weight: normal;}
+i,b{font-style: normal;}
+b{font-weight: normal;}
+input{margin: 0; background: none; outline: none; border: 0;}
+/*去除苹果默认按钮输入框样式*/
+input[type="button"], input[type="submit"], input[type="reset"] {
+-webkit-appearance: none;
+}
+.w688{box-sizing: border-box; padding: 0 .31rem;}
+.left{float: left;}
+.right{float: right;}
+
+/* .header{position: relative; height: .84rem; line-height: .84rem; text-align: center; color: #2A2A2A; font-size: .3rem; background: #fff;}
+.header a{position: absolute; top: 0; left: 0; display: inline-block; width: .84rem; height: .84rem;}
+.header i{position: absolute; left: .4rem; top: 0; bottom: 0; margin: auto; display: block; width: .14rem; height: .29rem; background: url(../img/list/back.png) no-repeat center; background-size: 100%;}
+.header b{float: right; margin-right: .31rem; font-size: .26rem;} */
+
+.header{box-sizing: border-box; position: relative; height: .84rem; line-height: .84rem; text-align: center; color: #2A2A2A; font-size: .3rem; font-weight: 500; background: #fff; border-bottom: .01rem solid #F3F3F3;}
+.header span{display: inline-block; position: absolute; left: 0; right: 0; margin: auto;}
+.header a{position: absolute; top: 0; left: 0; display: inline-block; width: .84rem; height: .84rem;}
+.header i{position: absolute; left: .4rem; top: 0; bottom: 0; margin: auto; display: block; width: .14rem; height: .29rem; background: url(../img/list/back.png) no-repeat center; background-size: 100%;}
+.header b{float: right; margin-right: .31rem; font-size: .26rem;}

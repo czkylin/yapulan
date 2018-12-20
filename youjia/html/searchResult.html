@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>搜索</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/search.css">
+  <link rel="stylesheet" href="../css/searchResult.css">
+  <script>
+    document.getElementsByTagName('html')[0].style.fontSize = document.documentElement.clientWidth/750*100 + 'px';
+  </script>
+</head>
+<body>
+  <header>
+    <a class="logo" href=""><img class="logo" src="../img/list/back.png" alt=""></a>
+    <div class="search"><img src="../img/search.png" alt=""><input type="text" placeholder="请输入商品名称"></div>
+    <a class="message" href="">搜索</a>
+  </header>
+  <ul class="nav">
+    <li class="active down"><a href="#"><span>销量<i class="top"></i><i class="bottom"></i></span></a></li>
+    <li class=""><a href="#"><span>价格<i class="top"></i><i class="bottom"></i></span></a></li>
+    <li><a href="#"><span>最新上架<i></i></span></a></li>
+  </ul>
+  <div class="list w688">
+    <dl>
+      <dt><img src="../img/list/goods.png" alt=""></dt>
+      <dd>
+        <p class="title">男款秋季优质棉原宿风韩版男袜子男款秋季优质棉袜</p>
+        <p class="price"><span>￥</span>32</p>
+      </dd>
+    </dl>
+    <dl>
+      <dt><img src="../img/list/goods.png" alt=""></dt>
+      <dd>
+        <p class="title">男款秋季优质棉原宿风韩版男袜子男款秋季优质棉袜</p>
+        <p class="price"><span>￥</span>32</p>
+      </dd>
+    </dl>
+    <dl>
+      <dt><img src="../img/list/goods.png" alt=""></dt>
+      <dd>
+        <p class="title">男款秋季优质棉原宿风韩版男袜子男款秋季优质棉袜</p>
+        <p class="price"><span>￥</span>32</p>
+      </dd>
+    </dl>
+    <dl>
+      <dt><img src="../img/list/goods.png" alt=""></dt>
+      <dd>
+        <p class="title">男款秋季优质棉原宿风韩版男袜子男款秋季优质棉袜</p>
+        <p class="price"><span>￥</span>32</p>
+      </dd>
+    </dl>
+    <dl>
+      <dt><img src="../img/list/goods.png" alt=""></dt>
+      <dd>
+        <p class="title">男款秋季优质棉原宿风韩版男袜子男款秋季优质棉袜</p>
+        <p class="price"><span>￥</span>32</p>
+      </dd>
+    </dl>
+    <dl>
+      <dt><img src="../img/list/goods.png" alt=""></dt>
+      <dd>
+        <p class="title">男款秋季优质棉原宿风韩版男袜子男款秋季优质棉袜</p>
+        <p class="price"><span>￥</span>32</p>
+      </dd>
+    </dl>
+  </div>
+
+  <script type="text/javascript">
+    var toggle = [{
+      'class': 'down',
+      'num': '',
+      'price': ''
+    },{
+      'class': 'up',
+      'num': '',
+      'price': ''
+    },{
+      'class': 'active',
+      'num': '',
+      'price': ''
+    }];
+    var li = document.getElementsByClassName('nav')[0].getElementsByTagName('li');
+    var length = toggle.length-1;
+    var i=1;
+    li[0].onclick = function() {
+      for(var n=0; n<li.length; n++) {
+        li[n].className = '';
+      }
+      li[0].className = toggle[i].class;
+      i++;
+      if(i == 3) {
+        i = 0;
+      }
+    }
+    var j=0;
+    li[1].onclick = function() {
+      for(var n=0; n<li.length; n++) {
+        li[n].className = '';
+      }
+      li[1].className = toggle[j].class;
+      j++;
+      if(j == 3) {
+        j = 0;
+      }
+    }
+    li[2].onclick = function() {
+      for(var n=0; n<li.length; n++) {
+        li[n].className = '';
+      }
+      this.className = 'active'
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.list{overflow: hidden; margin-top: .84rem;}
+.list dl{overflow: hidden; float: left; margin-left: .6rem; padding-bottom: 0; height: 2.1rem; width: 6.28rem;}
+.list dl dt{width: 1.69rem; height: 1.69rem;}
+.list dl dd{width: 4.32rem; border-bottom: .01rem solid #F3F3F3;}
+.list dl dd .buy{width: 1.42rem; height: .54rem; background: #fff; border: .01rem solid #5C5C5C; border-radius: .04rem; color: #5C5C5C;}
+.list dl dd i{display: inline-block; width: 1.04rem; height: 2.1rem; line-height: 2.1rem; text-align: center; font-size: .28rem; color: #fff;}
+.list dl dd i.heart{background: #676161;}
+.list dl dd i.delete{background: #F83244;}
+p.time{height: 1.1rem; line-height: 1.1rem; text-indent: .66rem; font-size: .36rem; border-bottom: .01rem solid #f3f3f3;}
+.content{overflow: hidden; position: relative; width: 9.2rem; height: 2.1rem; -webkit-transition:all 0.3s linear; transition:all 0.3s linear;}
+b{position: absolute; top: 0; bottom: 0; margin: auto; display: inline-block; width: .34rem; height: .34rem; border: .01rem solid #686868; border-radius: 50%;}
+b.checked{border: 0; background: url('../img/detail/checked.png') no-repeat center; background-size: 100%;}
+.after{float: right; width: 2rem;}
+.after i{display: inline-block; float: left; width: 1rem; height: 2.1rem; line-height: 2.1rem; text-align: center; font-size: .28rem; color: #fff;}
+.after i.heart{background: #676161;}
+.after i.delete{background: #F83244;}
+.swipeleft{transform:translateX(-2rem);-webkit-transform:translateX(-2rem);}
+.list dl dd p.price{bottom: .2rem;}
+span.count{display: block; position: absolute; bottom: .2rem; right: 0; margin: auto; height: .5rem;}
+.content span.right i,.content span.right input{float: left; display: inline-block; width: .62rem; height: .5rem; line-height: .5rem; text-align: center; font-size: .26rem; background: #fff;}
+i.minus,i.plus{width: .6rem !important; background: #F7F4F4 !important;}
+.list dd span.right i{float: left; display: inline-block; width: .62rem; height: .5rem; line-height: .5rem; text-align: center; background: #fff; color: #2A2A2A;}
+.footer{position: fixed; bottom: .9rem; width: 100%; height: .9rem; line-height: .9rem; background: #FAFAFA;}
+.footer .left{width: 1.18rem; font-size: .28rem; color: #5C5C5C;}
+.footer .left span{margin-left: .46rem;}
+.footer .total{float: left; box-sizing: border-box; padding-right: .1rem; width: 3.66rem;}
+.footer .total p{text-align: right;}
+.footer .total .top{height: .52rem; line-height: .52rem; font-size: .32rem; color: #2A2A2A;}
+.footer .total .top span{color: #F53549;}
+.footer .bottom{height: .38rem; line-height: .38rem; font-size: .24rem; color: #5C5C5C;}
+.footer .buy{float: left; width: 2.4rem; height: .9rem; text-align: center; font-size: .3rem; color: #fff; background: #F53549;}
+footer{position: fixed; bottom: 0; width: 100%; height: .9rem; background: #fafafa;}
+footer dl{float: left; width: 25%;}
+footer dl dt{position: relative; height: .52rem; overflow: hidden; text-align: center;}
+footer dl dt img{position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; display: block;}
+footer dl:nth-of-type(1) dt img{width: .38rem; height: .35rem;}
+footer dl:nth-of-type(2) dt img{width: .28rem; height: .35rem;}
+footer dl:nth-of-type(3) dt img{width: .33rem; height: .35rem;}
+footer dl:nth-of-type(3) dd{color: #F83244;}
+footer dl:nth-of-type(4) dt img{width: .3rem; height: .35rem;}
+footer dl dd{font-size: .22rem; text-align: center;}

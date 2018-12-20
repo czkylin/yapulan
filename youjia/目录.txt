@@ -1,0 +1,57 @@
+首页： index.html
+拼团列表： groupBuying.html			上拉加载字符串拼接
+抢购列表： panicBuying.html			test/dropload
+详情： detail.html
+拼团详情： detail_pintuan.html
+抢购详情： detail_qianggou.html
+登录： login.html
+注册： register
+修改密码： changePwd
+短信找回： forgetPwd
+邮箱找回： forgetPwdMail
+我的收藏： collection					1.69
+购物车，删除购物车： cart
+个人资料，个人资料编辑完成： personal
+部分个人信息键入， 部分个人信息键入-删除： personal_detail
+搜索： search_none
+搜索键入： search
+搜索结果： searchResult
+填写和提交订单信息： order_write
+确认信息： order_confirm
+编辑地址： address_edit
+新增地址： address_add
+新增收货地址：addressAdd
+选择收货地址： chooseAddress		单选
+浏览记录： history
+浏览记录-编辑： history_edit			多选、全选
+我的订单-全部订单： order_all
+我的订单-待付款： order_waitPay
+我的订单-待发货： order_waitDelivery
+我的订单-已收货： order_received
+我的订单-退款订单： order_refund
+快递信息： expressInfo
+退款详情： refund
+申请退款： refund_apply				长传图片
+在线客服： service
+我的：my
+我的-已登录：my_login
+我的积分：points
+积分兑换： points_exchange
+我的优惠券： ticket
+我的优惠券-已失效： ticket_lose
+上传凭证：refund_apply1     			()()()		
+分享：  detail.html
+我的消息： notice_my
+通知消息： notice
+物流消息： notice_logistics
+我的咨询： consult
+我的余额： balance
+我的建议： advice
+发表建议： advice_express
+订单详情： order_detail
+订单详情_确认收货： order_detail_received
+订单详情_正在运输： order_detail_trans
+确认收货： status_received
+支付成功： status_paySuccess
+支付失败： status_payFail
+分类： classify

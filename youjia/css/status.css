@@ -1,0 +1,34 @@
+.content{width: 100%; height: 4.56rem; text-align: center; overflow: hidden;}
+.content img{display: block; margin: .74rem auto 0; width: 1.32rem; height: auto;}
+.content p.text{margin-top: .36rem; font-size: .3rem; color: #509d4c;}
+.content p.price{margin-top: .1rem; line-height: .56rem; font-size: .52rem;}
+.content p.price span{font-size: .28rem;}
+.content a{margin: .43rem auto 0; display: block;  width: 1.46rem; height: .56rem; line-height: .56rem; text-align: center; font-size: .24rem; border: .01rem solid #e1e1e1; border-radius: .04rem;}
+.line{width: 100%; height: .18rem; background: #f7f4f4;}
+p.title{height: .86rem; line-height: .86rem; text-align: center; font-size: .3rem;}
+dl{padding: .2rem .31rem; height: 1.5rem; background: #fff;}
+dl dt{float: left; overflow: hidden; width: 1.7rem; height: 1.7rem; }
+dl dt img{display: block; width: 100%; height: auto;}
+dl dd{float: left; position: relative; margin-left: .2rem; width: 4.98rem; height: 100%; font-size: .26rem;}
+dl dd p.text{margin-top: .14rem; line-height: .38rem; font-size: .26rem;}
+dl dd p.price{position: absolute; bottom: 0; right: 0; font-size: .36rem; color: #F83244;}
+dl dd p.price span{font-size: .28rem;}
+span.price,span.num{position: absolute; right: 0; font-size: .24rem; color: #999;}
+span.price{top: .12rem;}
+span.num{top: .42rem;}
+
+.con1{margin-top: .18rem; box-sizing: border-box; padding: .2rem .31rem; margin-bottom: .18rem; background: #fff; overflow: hidden;}
+.con1 li{box-sizing: border-box; height: .46rem; line-height: .46rem; font-size: .24rem;}
+.con1 li span.left{color: #999;}
+.con1 li span.right{width: 5.44rem;}
+
+ul.pay{background: #fff; margin-top: .18rem;}
+ul.pay li{position: relative; height: .8rem; line-height: .8rem; font-size: .28rem; color: #2a2a2a;}
+ul.pay li img{display: inline-block; width: .4rem; height: auto; vertical-align: middle;}
+ul.pay li span{margin-left: .2rem;}
+ul.pay li i{display: inline-block; position: absolute; top: 0; bottom: 0; right: 0; margin: auto; width: .32rem; height: .32rem; vertical-align: middle; border: .01rem solid #606060; border-radius: 50%;}
+ul.pay li.checked i{width: .34rem; height: .34rem; background: url('../img/detail/checked.png') no-repeat center; background-size: 100%; border: 0;}
+
+.bottom{position: absolute; bottom: 0; width: 100%; height: .88rem; line-height: .88rem; background: #fafafa;}
+.bottom span{margin-left: .31rem; float: left; display: block; font-size: .4rem; color: #f53549; vertical-align: top;}
+.bottom a{float: right; display: block; width: 2.4rem; text-align: center; font-size: .3rem; color: #fff; background: #f53549;}

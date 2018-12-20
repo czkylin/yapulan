@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>新增收货地址</title>
+  <link rel="stylesheet" href="../css/lib/common.css">
+  <link rel="stylesheet" href="../css/lib/LCalendar.css">
+  <link rel="stylesheet" href="../css/lib/upload.css">
+  <link rel="stylesheet" href="../css/lib/picker.css">
+  <link rel="stylesheet" href="../css/lib/mobileSelect.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/personal.css">
+
+  <script>
+    document.getElementsByTagName('html')[0].style.fontSize = document.documentElement.clientWidth/750*100 + 'px';
+  </script>
+</head>
+<body>
+  <div class="header"><a class="back" href="javascript:;"><i></i></a><span>新增收货地址</span><b>保存</b></div>
+  <ul class="list">
+    <li><span>收货人姓名</span><input type="text" placeholder="请输入姓名"></li>
+    <li><span>手机号码</span><input type="text" placeholder="请输入手机号"></li>
+    <li>
+      <div class="page-upload">
+      	<form id="submitForm" action="" method="post">
+  	        <ul class="info-list">
+  	            <li class="info-list-li">
+  	                <label>所在地区</label>
+  	                <span id="provinceCity_fu"  class="select">请选择</span>
+  	                <input type="hidden" name="provinceCity" id="provinceCity" />
+  	            </li>
+  	        </ul>
+          </form>
+      </div>
+      <i></i>
+    </li>
+    <!-- <li><a href="javascript:;"><span>所在地区</span><span class="address"></span><i></i></a></li> -->
+    <li><span>街道地址</span><input type="text" placeholder="请输入街道地址"></li>
+  </ul>
+  <div class="default w688"><i></i>设为默认地址</div>
+<script>
+  var lib = { flexible:{ rem:100, page:750 } }
+</script>
+<script src="../js/jquery-3.3.1.min.js" charset="utf-8"></script>
+<script src="../js/flexible.js"></script>
+<script type="text/javascript" src="../js/city.js"></script>
+<script type="text/javascript" src="../js/picker.min.js"></script>
+<script type="text/javascript">
+
+$('#provinceCity_fu').click(function(){
+    var $this = $(this);
+    new Picker({
+        "title": '请选择地区',//标题(可选)
+        "defaultValue": $(this).text(),//默认值-多个以空格分开（可选）
+        "type": 3,//需要联动级数[1、2、3]（可选）
+        "data": cityData,//数据(必传)
+        "keys": {
+            "id": "Code",
+            "value": "Name",
+            "childData": "level"//最多3级联动
+        },//数组内的键名称(必传，id、text、data)
+        "callBack": function (val) {
+            //回调函数（val为选择的值）
+            $this.text(val);
+        }
+    });
+});
+</script>
+
+</body>
+</html>

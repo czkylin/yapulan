@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>优家拼团</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/list.css">
+  <script>
+    document.getElementsByTagName('html')[0].style.fontSize = document.documentElement.clientWidth/750*100 + 'px';
+  </script>
+  <style media="screen">
+    .list dl dd p.title{margin-top: .1rem;}
+    .list dl dd p.price{width: 100%; text-align: right;}
+    .list dl dd p.price strong{font-size: .26rem; color: #2a2a2a;}
+  </style>
+</head>
+<body>
+  <div class="header"><a class="back" href="javascript:;"><i></i></a><span>优家拼团</span></div>
+  <div class="banner"><img src="../img/list/banner1.png" alt=""></div>
+  <ul id="personkit_article_ul" class="list w688">
+    <li class="pin">
+      <dl>
+        <dt><img src="../img/list/goods.png" alt=""></dt>
+        <dd>
+          <p class="countDown"><strong>距活动结束还剩</strong><span class="hour time">00</span> : <span class="min time">12</span> : <span class="second time">34</span></p>
+          <p class="title">男款秋季优质棉原宿风韩版男袜子男款秋季优质棉袜</p>
+          <p class="price"><strong>团购价：</strong><span>￥</span>32</p>
+        </dd>
+      </dl>
+    </li>
+    <li class="pin">
+      <dl>
+        <dt><img src="../img/list/goods.png" alt=""></dt>
+        <dd>
+          <p class="countDown"><strong>距活动结束还剩</strong><span class="hour time">00</span> : <span class="min time">12</span> : <span class="second time">34</span></p>
+          <p class="title">男款秋季优质棉原宿风韩版男袜子男款秋季优质棉袜</p>
+          <p class="price"><strong>团购价：</strong><span>￥</span>32</p>
+        </dd>
+      </dl>
+    </li>
+    <li class="pin">
+      <dl>
+        <dt><img src="../img/list/goods.png" alt=""></dt>
+        <dd>
+          <p class="countDown"><strong>距活动结束还剩</strong><span class="hour time">00</span> : <span class="min time">12</span> : <span class="second time">34</span></p>
+          <p class="title">男款秋季优质棉原宿风韩版男袜子男款秋季优质棉袜</p>
+          <p class="price"><strong>团购价：</strong><span>￥</span>32</p>
+        </dd>
+      </dl>
+    </li>
+  </ul>
+
+<!-- <script src="../js/jquery-3.3.1.min.js" charset="utf-8"></script> -->
+<script src="../js/zepto.js" charset="utf-8"></script>
+<script type="text/javascript">
+;(function(){
+   $('#personkit_article_ul').on('touchmove',function(){
+       //判断最后一个元素是否在底部之上
+       if( $('.pin').eq($('.pin').length-1).offset().top-$(window).scrollTop() < $(window).height() ){
+           $('.bottom-line').css('display','block').text('正在刷新...');
+           checkPull();
+       }
+   });
+   //添加元素方法
+   function checkPull(){
+       var pinNew;
+       pinNew=document.createDocumentFragment();
+       //每次添加5条内容
+       for(var j=5;j>0;j--){
+           var li=document.createElement('li');
+           li.className="pin";
+           li.innerHTML=`
+            <dl>
+             <dt><img src="../img/list/goods.png" alt=""></dt>
+             <dd>
+               <p class="title">男款秋季优质棉原宿风韩版男袜子男款秋季优质棉袜</p>
+               <p class="price"><span>￥</span>32</p>
+               <a href=""><div class="buy">去拼团</div></a>
+             </dd>
+            </dl>`;
+           pinNew.appendChild(li);
+       }
+       $('#personkit_article_ul')[0].appendChild(pinNew);
+   }
+})();
+</script>
+
+</body>
+</html>

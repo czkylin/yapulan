@@ -1,0 +1,15 @@
+body{background: #f7f4f4;}
+.left,.right{position: relative; margin-top: .5rem;}
+.left i,.right i{position: absolute; top: 0; bottom: 0; margin: auto; display: block; width: .72rem; height: .72rem; background: url('../img/list/icon1.png') no-repeat center; background-size: 100%;}
+.left i{left: .31rem;}
+.right i{right: .31rem;}
+.right i{background-image: url('../img/list/icon.png');}
+.left p.text,.right p.text{ box-sizing: border-box; padding: .26rem .18rem; font-size: .26rem;}
+.left p.text{background: #fff; margin-left: .88rem;}
+.right p.text{background: #eed598; margin-right: .88rem;}
+.bottom{position: fixed; bottom: 0; width: 100%; height: .88rem; background: #fff;}
+.bottom input,.bottom i{position: absolute; top: 0; bottom: 0; margin: auto;}
+.bottom input{box-sizing: border-box; padding-left: .18rem; left: .31rem; width: 5.5rem; height: .6rem; font-size: .26rem; color: #999; background: #f6f6f6;}
+.bottom i{ display: block; width: .42rem; height: .42rem; background: url('../img/list/face.png') no-repeat center; background-size: 100%;}
+.bottom i.face{left: 6.1rem;}
+.bottom i.more{right: .31rem; background-image: url('../img/list/more.png');}

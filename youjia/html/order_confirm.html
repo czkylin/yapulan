@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>填写订单</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/order.css">
+  <style>
+    .list dl{padding-bottom: 0; height: 2.04rem;}
+    .list dl dt{width: 1.69rem; height: 1.69rem;}
+    .list dl dd{width: 4.92rem; border-bottom: .01rem solid #F3F3F3;}
+    .addAddress{text-align: left;}
+  </style>
+  <script>
+    document.getElementsByTagName('html')[0].style.fontSize = document.documentElement.clientWidth/750*100 + 'px';
+  </script>
+</head>
+<body>
+  <div class="header"><a class="back" href="javascript:;"><i></i></a><span>填写订单</span></div>
+  <div class="addAddress">
+    <p class="title"><span class="name">王先生</span><span class="phone">15735927487</span></p>
+    <p class="address">中国 北京 北京市 昌平区 沙河镇七燕路壹号院8-8-2010 （765987）</p>
+    <i></i>
+  </div>
+  <ul class="pay w688">
+    <li class="checked"><img src="../img/detail/balance.png" alt=""><span>账户余额</span><i></i></li>
+    <li><img src="../img/detail/zhifubao.png" alt=""><span>支付宝</span><i></i></li>
+    <li><img src="../img/detail/wxPay.png" alt=""><span>微信</span><i></i></li>
+  </ul>
+  <div class="list w688">
+    <dl>
+      <dt><img src="../img/list/goods.png" alt=""></dt>
+      <dd>
+        <p class="title">男款秋季优质棉原宿风韩版男袜子男款秋季优质棉袜</p>
+        <p class="price"><span>￥</span>32<b>x8</b></p>
+      </dd>
+    </dl>
+    <dl>
+      <dt><img src="../img/list/goods.png" alt=""></dt>
+      <dd>
+        <p class="title">男款秋季优质棉原宿风韩版男袜子男款秋季优质棉袜</p>
+        <p class="price"><span>￥</span>32<b>x8</b></p>
+      </dd>
+    </dl>
+  </div>
+  <ul class="taps">
+    <li><a href="">优惠券<i></i><span>暂无可用</span></a></li>
+    <li>备注<input type="text" placeholder="请输入备注信息"></li>
+  </ul>
+  <ul class="count w688">
+    <li>商品金额<span>¥689.00</span></li>
+    <li>运费<span>¥0.00</span></li>
+  </ul>
+  <div class="bottom">
+    <span>¥689.00</span><a href="">提交订单</a>
+  </div>
+<script type="text/javascript">
+  var list = document.getElementsByClassName('pay')[0];
+  var oLi = list.getElementsByTagName('li');
+  for(var i=0; i<oLi.length; i++) {
+    oLi[i].index = i;
+    oLi[i].addEventListener('touchstart', function() {
+      for(var j=0; j<oLi.length; j++) {
+        oLi[j].classList.remove('checked');
+      }
+      this.classList.add('checked');
+    })
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body{background: #f7f4f4;}
+.header{z-index: 2; position: fixed; top: 0; width: 100%; height: .84rem; line-height: .84rem; text-align: center; color: #2A2A2A; font-size: .28rem; font-weight: 5500; background: #fff;}
+.header a{position: absolute; top: 0; left: 0; display: inline-block; width: .84rem; height: .84rem;}
+.header i{position: absolute; left: .4rem; top: 0; bottom: 0; margin: auto; display: block; width: .14rem; height: .29rem; background: url(../img/list/back.png) no-repeat center; background-size: 100%;}
+.nav{position: fixed; z-index: 2; width: 100%; clear: both; border-top: .01rem solid #f3f3f3; border-bottom: .01rem solid #f3f3f3;}
+.nav li{float: left; width: 20%; height: .78rem; line-height: .78rem; text-align: center; font-size: .26rem; background: #fff;}
+.nav li a{display: inline-block; height: 100%; width: auto;}
+.nav li.active a{color: #f53549; border-bottom: .03rem solid #f53549;}
+ul.order{margin-top: .78rem; clear: both;}
+ul.order li{position: relative; box-sizing: border-box; padding: 0 .31rem; margin-bottom: .18rem; background: #fff;}
+ul.order li:nth-last-child(1){margin-bottom: 0;}
+ul.order li p.title{height: .78rem; line-height: .78rem; font-size: .24rem; color: #999; }
+ul.order li p.title span{float: right; clear: both; font-size: .26rem;}
+ul.order li dl{margin-top: .24rem; height: 1.5rem; }
+ul.order li dl dt{float: left; overflow: hidden; width: 1.5rem; height: 1.5rem; }
+ul.order li dl dt img{display: block; width: 100%; height: auto;}
+ul.order li dl dd{float: left; position: relative; margin-left: .2rem; width: 5.18rem; height: 100%; font-size: .26rem;}
+ul.order li dl dd p.text{margin-top: .04rem; width: 4.12rem; line-height: .38rem;}
+ul.order li span.price,ul.order li span.num{position: absolute; right: 0; font-size: .24rem; color: #999;}
+ul.order li span.price{top: .12rem;}
+ul.order li span.num{top: .42rem;}
+ul.order li p.count{height: .94rem; line-height: .94rem; text-align: right; font-size: .26rem;}
+ul.order li p.count strong{font-size: .32rem; color: #f53549;}
+ul.order li p.freight{position: absolute; bottom: 1.36rem; right: .31rem; height: auto; line-height: .28rem;}
+ul.order li p.freight span{display: block; margin-top: .1rem;}
+ul.order li .bottom{position: relative; height: .94rem; border-top: .01rem solid #f3f3f3;}
+ul.order li .bottom span{display: inline-block; position: absolute; top: 0; bottom: 0; margin: auto; right: 1.73rem; width: 1.46rem; height: .56rem; line-height: .56rem; text-align: center; font-size: .28rem; border: .01rem solid #e1e1e1; border-radius: .04rem;}
+ul.order li .bottom span:nth-last-of-type(1){margin-left: .28rem; right: 0;}
+ul.order li.waitPay .bottom span:nth-last-of-type(1){color: #f53549; border-color: #f53549;}
+ul.order li .bottom.freight{margin-top: .94rem;}

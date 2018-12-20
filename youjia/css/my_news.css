@@ -1,0 +1,11 @@
+body{background: #f7f4f4;}
+ul{box-sizing: border-box; padding-left: .31rem; margin-bottom: .18rem; background: #fff;}
+ul li{box-sizing: border-box; padding-top: .3rem; position: relative; height: 1.38rem; border-top: .01rem solid #f3f3f3;}
+ul.title li img,ul li .container{position: absolute; top: 0; bottom: 0; left: 0; margin: auto; display: block; width: .8rem; height: .8rem;}
+ul li .content{margin-left: .92rem; width: 5.94rem;}
+ul li p.name{height: .42rem; line-height: .42rem; font-size: .28rem;}
+ul li p.text{height: .38rem; line-height: .38rem; font-size: .26rem; color: #5c5c5c; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+ul li p.time{position: absolute; top: .38rem; right: .31rem; font-size: .22rem; color: #999;}
+ul.list li:nth-of-type(1){border-top: 0;}
+ul.list li .container{overflow: hidden; border-radius: .06rem;}
+ul.list li .container img{position: absolute; left: 50%; transform: translateX(-50%); display: block; height: 100%; width: auto;}

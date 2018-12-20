@@ -1,0 +1,35 @@
+body{background: #f7f4f4;}
+.status{position: relative; width: 100%; height: 1.4rem; background: url('../img/list/bg.jpg') no-repeat center; background-size: 100%;}
+.status img{position: absolute; top: 0; bottom: 0; left: .31rem; margin: auto; display: block; height: .28rem; width: auto;}
+.status p.text{margin-left: .7rem; height: 100%; line-height: 1.4rem; font-size: .3rem; color: #fff;}
+
+.info{margin-bottom: .18rem; height: 1.34rem; background: #fff; overflow: hidden;}
+.info .person{margin-top: .2rem; line-height: .48rem; font-size: .28rem;}
+.info .person span{font-size: .26rem;}
+.info .address{line-height: .44rem; font-size: .24rem; color: #999;}
+
+ul.order{margin-bottom: .18rem;}
+ul.order li .title{box-sizing: border-box; padding-left: .31rem; height: .78rem; line-height: .78rem; font-size: .24rem; background: #fff;}
+ul.order li .title span{color: #999;}
+
+dl{padding: .2rem .31rem; height: 1.5rem; background: #fff;}
+dl dt{float: left; overflow: hidden; width: 1.5rem; height: 1.5rem; }
+dl dt img{display: block; width: 100%; height: auto;}
+dl dd{float: left; position: relative; margin-left: .2rem; width: 5.18rem; height: 100%; font-size: .26rem;}
+dl dd p.text{margin-top: .14rem; width: 4.12rem; line-height: .38rem; font-size: .26rem;}
+span.price,span.num{position: absolute; right: 0; font-size: .24rem; color: #999;}
+span.price{top: .12rem;}
+span.num{top: .42rem;}
+
+.con1,.con2{box-sizing: border-box; padding: .2rem .31rem 0; margin-bottom: .18rem; background: #fff; overflow: hidden;}
+.con1{height: 1.76rem;}
+.con1 li,.con2 li{box-sizing: border-box; height: .46rem; line-height: .46rem; font-size: .24rem;}
+.con1 li span.left,.con2 li span.left{color: #999;}
+
+.con2{margin-bottom: 0;}
+.con2 li:nth-last-child(1){box-sizing: content-box; padding-bottom: .18rem; border-bottom: .01rem solid #f3f3f3;}
+p.count{box-sizing: border-box; padding-right: .31rem; height: .88rem; line-height: .88rem; text-align: right; font-size: .28rem; border-bottom: .01rem solid #f3f3f3; background: #fff;}
+p.count span{color: #f53549;}
+
+p.apply{position: relative; height: .88rem; background: #fff;}
+p.apply a{position: absolute; top: 0; bottom: 0; right: .31rem; margin: auto; display: block; width: 1.46rem; height: .56rem; line-height: .56rem; text-align: center; font-size: .24rem; border: .01rem solid #e1e1e1;}

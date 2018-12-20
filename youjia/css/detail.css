@@ -1,0 +1,59 @@
+body{background: #F7F4F4;}
+.header{position: absolute; z-index: 2; height: .78rem; width: 100%; background: transparent; border: 0;}
+.header i{position: absolute; top: 0; bottom: 0; margin: auto; display: block; width: .54rem; height: .54rem; background: url('../img/detail/back.png') no-repeat center; background-size: 100%;}
+.header i.back{left: .31rem;}
+.header i.backIndex{left: 5.84rem; background-image: url('../img/detail/backIndex.png');}
+.header i.share{left: 6.3rem; margin-left: .38rem; background-image: url('../img/detail/share.png');}
+.swiper-container{width: 100%; height: 7.5rem; overflow: hidden;}
+.swiper-container img{width: 100%; height: auto; display: block;}
+.swiper-pagination-bullet-active{background: #ff976a;}
+.countDown{height: .92rem; line-height: .92rem; color: #fff; background: #F53549;}
+.countDown span{display: block;}
+.countDown span.text{float: left; width: 1.5rem;font-size: .34rem; }
+.countDown span.time{float: right; font-size: .24rem; }
+.countDown span.time::after{content: ''; width: 0; height: 100%; display: inline-block; vertical-align: middle;}
+.countDown span.time i{vertical-align: middle; display: inline-block; width: .44rem; height: .34rem; line-height: .34rem; text-align: center; background: #fff; color: #F53549;}
+.countDown span.time i.hour{margin-left: .2rem;}
+p.title{box-sizing: border-box; padding-top: .1rem; height: auto; line-height: .5rem; font-size: .3rem; color: #333; background: #fff;}
+p.price{height: .92rem; line-height: .92rem; color: #F53549; font-size: .44rem; background: #fff;}
+p.price i{font-size: .28rem; color: #2A2A2A;}
+p.price span{font-size: .3rem;}
+ul.list{margin: .2rem 0; background: #fff;}
+ul.list li{border-bottom: .02rem solid #F7F4F4; height: .8rem; line-height: .8rem;}
+ul.list li:nth-of-type(4){border: 0;}
+ul.list li span{display: block; font-size: .26rem;}
+ul.list li span.left{float: left; color: #999;}
+ul.list li span.right{float: right; color: #2A2A2A; vertical-align: middle;}
+ul.list li span.right i,ul.list li span.right input{float: left; display: inline-block; width: .62rem; height: .5rem; line-height: .5rem; text-align: center; font-size: .26rem; background: #fff;}
+/* ul.list li span.right input{display: inline-block;} */
+i.minus,i.plus{width: .6rem !important; background: #F7F4F4 !important;}
+ul.list li:nth-of-type(4){position: relative;}
+span.count{display: block; position: absolute; top: 0; bottom: 0; right: 0; margin: auto; height: .5rem;}
+.details{width: 100%; background: #fff;}
+.details .title{height: .78rem; line-height: .78rem; text-align: center; color: #2A2A2A; font-size: .28rem;}
+.details img{width: 100%; height: auto;}
+
+.cover{display: none; z-index: 11; position: absolute; top: 0; left: 0; width: 100%; height: 102%; background: rgba(0, 0, 0, .2);}
+.cover.show{display: block;}
+.cover .content{position: absolute; top: 10.22rem; /*bottom: .14rem;*/width: 100%;}
+.cover ul{margin: 0 auto; width: 7.2rem; height: 2rem; background: #fff; overflow: hidden; border-radius: .08rem;}
+.cover ul li{position: relative; float: left; width: 33.3%; height: 100%; text-align: center; font-size: .26rem;}
+.cover ul li img{position: absolute; left: 0; right: 0; top: .48rem; margin: auto; display: block; width: .75rem; height: auto;}
+.cover ul li:nth-of-type(2) img{width: .62rem;}
+.cover ul li:nth-of-type(3) img{width: .54rem;}
+.cover ul li p.text{margin-top: 1.12rem; height: .76rem; line-height: .76rem;}
+.cover p.cancel{margin: .1rem auto 0; width: 7.2rem; height: .88rem; line-height: .88rem; text-align: center; font-size: .3rem; background: #fff; border-radius: .08rem;}
+
+
+.footer{display: flex; height: .9rem;}
+.footer dl{flex: 1; float: left; height: .9rem; background: #fafafa;}
+.footer dl dt{position: relative; overflow: hidden; height: .52rem; vertical-align: top;}
+.footer dl dt img{position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; display: block; width: .36rem; height: auto;}
+.footer dl dt b{position: absolute; top: 0; right: .12rem; display: none; width: .28rem; height: .28rem; line-height: .28rem; text-align: center; font-size: .16rem; color: #fff; background: #f53b4f; border-radius: 50%;}
+.footer dl dt b.active{display: block;}
+.footer dl dd{height: .38rem; line-height: .38rem; text-align: center; font-size: .22rem; color: #2A2A2A;}
+.footer dl.heart dt i{position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; display: block; width: .34rem; height: .32rem; background: url('../img/detail/heart1.png') no-repeat center; background-size: 100%;}
+.footer dl.heart.active dt i{background-image: url('../img/detail/heart2.png');}
+.footer .addCart,.footer .buy{float: left; width: 2.42rem; height: .9rem; line-height: .9rem; text-align: center; font-size: .3rem; color: #fff;}
+.footer .addCart{background: #676161;}
+.footer .buy{background: #F53549;}

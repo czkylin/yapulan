@@ -1,0 +1,13 @@
+.toggle{overflow: hidden; border-top: .01rem solid #f3f3f3;}
+.toggle li{float: left; width: 50%; height: .78rem; line-height: .78rem; text-align: center; border-bottom: .01rem solid #f3f3f3;}
+.toggle li a{position: relative; display: block; height: 100%;}
+.toggle li a span{position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;display: inline-block; width: 1.2rem; height: 100%; font-size: .3rem; color: #9c9c9c;}
+.toggle li.active a span{ color: #2a2a2a; border-bottom: .03rem solid #f53549;}
+.list li{box-sizing: border-box; padding: .12rem .22rem 0 .34rem; margin: .3rem auto 0; width: 6.88rem; height: 1.7rem; font-size: .24rem; background: url('../img/list/notUsed.png') no-repeat center; background-size: 100%;}
+.list li p.price{font-size: .72rem;}
+.list li p.price span{font-size: .4rem;}
+.list li p.rangeTime{margin-top: .3rem; font-size: .22rem; color: #999;}
+.list li a.use{display: block; margin-top: .66rem; width: 1.32rem; height: .52rem; line-height: .52rem; text-align: center; color: #fff; background: #f53549; border-radius: .26rem;}
+.list li .notes{margin: .3rem .6rem 0 .52rem;}
+.list li p.price,.list li p.text{width: 1.4rem;}
+.list li p.category,.list li p.rangeTime{width: 2.48rem;}
