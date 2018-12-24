@@ -1,0 +1,44 @@
+ul,li{
+  list-style: none;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.add label{
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}
+.add .ant-input.search_input{
+  width: 200px;
+}
+div.search_input{
+  display: inline-block;
+}
+.add{
+  margin: 0 auto;
+  padding-top: 40px;
+  box-sizing: border-box;
+  width: 1100px;
+  height: 100%;
+}
+.add ul{
+  width: 50%;
+}
+.add ul li{
+  margin-bottom: 10px;
+}
+i{
+  color: #f00;
+}
+.add label.unrequired{
+  text-indent: 10px;
+}
+.ant-upload-list{
+  width: 200px;
+  margin-left: 150px;
+  display: none;
+}
